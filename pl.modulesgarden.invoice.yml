@@ -3,6 +3,7 @@ issuer: ModulesGarden INBS.Software Konrad Keck
 keywords:
   - ModulesGarden
   - Poland
+  - Paid
 fields:
   date: INVOICEDATE(\d{2}\/\d{2}\/\d{4})
   invoice_number: \#(\d{4}\/\d{4}\/MG)
