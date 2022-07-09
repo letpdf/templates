@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+issuer: ModulesGarden INBS.Software Konrad Keck
+keywords:
+  - ModulesGarden
+  - Poland
+  - Proforma
+fields:
+  date: DATAWYSTAWIENIA(\d{2}\/\d{2}\/\d{4})
+  invoice_number: \#(\d{4,5})
+  amount_untaxed: Netto\$(\d{2,4}.\d{2})USD
+  amount: Razem\$(\d{2,4}.\d{2})USD
+  static_vat: PL8652468710
+options:
+  currency: USD
+  date_formats:
+    - '%d/%m/%Y'
+  decimal_separator: '.'
+  remove_whitespace: true
+

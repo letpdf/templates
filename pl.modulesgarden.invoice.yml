@@ -4,10 +4,11 @@ keywords:
   - ModulesGarden
   - Poland
 fields:
-  date: DATAWYSTAWIENIA(\d{2}\/\d{2}\/\d{4})
-  invoice_number: \#(\d{4,5})
-  amount_untaxed: Netto\$(\d{2,4}.\d{2})USD
-  amount: Razem\$(\d{2,4}.\d{2})USD
+  date: INVOICEDATE(\d{2}\/\d{2}\/\d{4})
+  invoice_number: \#(\d{4}\/\d{4}\/MG)
+  amount_untaxed: NetAmount\$(\d{2,4}.\d{2})USD
+  amount_subtotal: SUBTOTAL\$(\d{2,4}.\d{2})USD
+  amount: TOTAL\$(\d{2,4}.\d{2})USD
   static_vat: PL8652468710
 options:
   currency: USD
