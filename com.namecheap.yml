@@ -1,15 +1,13 @@
 issuer: Namecheap, Inc.
 fields:
-  amount: Ordertotal\$(\d+\.\d+)
-  date:
-    - Orderdate(\d+\­\d+\­\d{2})
-  invoice_number:
-    - Ordernumber(\d+)
+  amount: FinalCost:\$(\d+\.\d+)
+  date: OrderDate:(\d+\/\d+\/\d{2})
+  invoice_number: OrderNumber:(\d+)
 keywords:
-- Namecheap
-- 0818922
+  - Namecheap
+  - USA
 options:
   remove_whitespace: true
   currency: USD
   date_formats:
-    - '%Y-%m-%d'
+    - '%d.%m.%Y'
