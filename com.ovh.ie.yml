@@ -7,10 +7,8 @@ fields:
   invoice_number: Invoice\s+.+(IE\w+)
   static_vat: EE102146710
 keywords:
-  - EE102146710
   - Invoice
-  - ovh
-  - €
+  - IRELAND
 options:
   currency: €
   languages:
