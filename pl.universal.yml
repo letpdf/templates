@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+issuer: Universal Dominik Stanecki
+keywords:
+  - Universal
+  - Lublin
+fields:
+  date: ci(\d{2}-\d{2}-\d{4})
+  invoice_number: Faktura(FR\/\d{2}\/\d{2}\/\d{4})
+  amount: aty(\d{1,4},\d{2})PLN
+options:
+  currency: PLN
+  date_formats:
+    - '%d-%m-%Y'
+  decimal_separator: ','
+  remove_whitespace: true
+

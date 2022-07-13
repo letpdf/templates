@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+issuer: ModulesGarden INBS.Software Konrad Keck
+keywords:
+  - ModulesGarden
+  - Poland
+  - Paid
+fields:
+  date: INVOICEDATE(\d{2}\/\d{2}\/\d{4})
+  invoice_number: \#(\d{4}\/\d{4}\/MG)
+  amount_untaxed: NetAmount\$(\d{2,4}.\d{2})USD
+  amount_subtotal: SUBTOTAL\$(\d{2,4}.\d{2})USD
+  amount: TOTAL\$(\d{2,4}.\d{2})USD
+  static_vat: PL8652468710
+options:
+  currency: USD
+  date_formats:
+    - '%d/%m/%Y'
+  decimal_separator: '.'
+  remove_whitespace: true
+
