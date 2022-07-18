@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+issuer: DD sp. z o.o.
+keywords:
+  - dregistrar.pl
+  - PL5272618389
+fields:
+  date: Dateofissue:(\d{2}.\d{2}.\d{2})
+  invoice_number: Number:(\d{2}\/\w{2}\/\d{2}\/\d{4})
+  amount: amountpaid:(\d{1,4},\d{2})PLN
+options:
+  remove_whitespace: true
+  currency: PLN
+  date_formats:
+    - '%d.%m.%Y'
+  decimal_separator: ','
