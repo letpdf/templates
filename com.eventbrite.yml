@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+issuer: Eventbrite, Inc.
+fields:
+  amount: (\d{2}[\.]\d{2})
+  date: InvoiceDate:(\w{3}\d{1,2},\d{4})
+  invoice_number: InvoiceNumber:(\d+)
+keywords:
+  - Invoice
+  - Eventbrite
+options:
+  currency: EUR
+  languages:
+    - en
+  decimal_separator: '.'
+  replace:
+    - [ '$', 'USD' ]
+    - [ '€', 'EUR' ]
+  remove_whitespace: true
+  date_formats:
+    - '%B%d,%Y'
+
