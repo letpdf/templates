@@ -1,9 +1,15 @@
 issuer: Envato
 fields:
-  amount: InvoiceTotal:\$(\d+.\d{2})
-  amount_untaxed: InvoiceTotal:\$(\d+.\d{2})
-  date: Orderdate:(\d+\w+\d+)
-  invoice_number: InvoiceNo.(\d+)
-  partner_name: (Envato)
+  amount: InvoiceTotal:USD\$(\d+.\d{2})
+  date: Date:(\d{2}\w{3}\d{4})
+  invoice_number: InvoiceNo:(\w+)
+  order_number: InvoiceNo:(\w+)
 keywords:
-- Envato
+  - Envato
+  - EU372009975
+options:
+  remove_whitespace: true
+  currency: $
+  decimal_separator: '.'
+  date_formats:
+    - '%d%B%Y'
