@@ -2,7 +2,7 @@ issuer: netcup GmbH
 fields:
   amount: Rechnungsbetrag(\d{1,5},\d{2})EUR
   date: Datum(\d{2}.\d{2}.\d{4})
-  invoice_number: Rechnungsnummer:(\w{1,4}\d{1,11})
+  invoice_number: Rechnungs-Nr.(\w{2}-\d{6,9})
 keywords:
  - netcup
  - Karlsruhe
