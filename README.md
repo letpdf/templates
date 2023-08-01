@@ -2,6 +2,18 @@
 
 templates.letpdf.com
 
+
+## start
+
+start with [letpdf/bash: bash.letpdf.com](https://github.com/letpdf/bash) 
+```bash
+git clone https://github.com/letpdf/bash.git
+```
+and clone inside the templates of invoices
+```bash
+git clone https://github.com/letpdf/templates.git
+```
+
 ## Examples
 
     issuer: Amazon Web Services, Inc.
